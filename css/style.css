@@ -1,3 +1,7 @@
+body{
+    margin-top: 30px;
+}
+
 .jumbotron img{
     width: 200px;
     border: 5px solid #666;
