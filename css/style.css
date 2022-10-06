@@ -1,3 +1,7 @@
+body{
+    margin-top: 30px;
+}
+
 .jumbotron img{
     width: 200px;
     border: 5px solid #666;
@@ -14,4 +18,18 @@ section{
 
 .portfolio{
     background-color: #eee;
+}
+
+footer{
+    height: 100px;
+    background-color: #333;
+    padding-top: 30px;
+}
+
+footer p{
+    color: #aaa;
+    font-size: 0.9em;
+}
+footer p i{
+    color: salmon;
 }
