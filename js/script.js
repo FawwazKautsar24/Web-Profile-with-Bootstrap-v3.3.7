@@ -10,10 +10,10 @@ $('.page-scroll').on('click', function(e){
     }, 1250, 'easeInOutExpo');
 });
 
-// parallax
 $(window).scroll(function(){
     var windowScroll = $(this).scrollTop();
 
+    // parallax effect untuk bagian jumbotron
     $('.jumbotron img').css({
         'transform': `translate(0px, ${windowScroll/4}%)`
     });
@@ -23,4 +23,13 @@ $(window).scroll(function(){
     $('.jumbotron p').css({
         'transform': `translate(0px, ${windowScroll/1.2}%)`
     });
+
+    // parallax (landing) effect untuk bagian portfolio
+    if(windowScroll > $('.portfolio').offset().top - 300){
+        $('.portfolio .thumbnail').each(function(i){
+            setTimeout(function(){
+                $('.portfolio .thumbnail').eq(i).addClass('muncul');
+            }, 350 * (i));
+        });
+    }
 });
