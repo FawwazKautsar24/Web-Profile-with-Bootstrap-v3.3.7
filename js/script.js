@@ -10,6 +10,12 @@ $('.page-scroll').on('click', function(e){
     }, 1250, 'easeInOutExpo');
 });
 
+// efek animasi pada bagian about
+$(window).on('load', function(){
+    $('.pKiri').addClass('muncul');
+    $('.pKanan').addClass('muncul');
+});
+
 $(window).scroll(function(){
     var windowScroll = $(this).scrollTop();
 
